@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <h1 class='padding'>GbrexitP</h1>
+  <h5 class='padding'>Dataset 1: The GBP - EUR Exchange Rate</h5>
+  <p class='padding'>This data was collected from the AlphaVantage API every 3 minutes between 28th December 2018 and 7th January 2019. </p>
+  <h5 class='padding padfurther'>Dataset 2: Tweets containing the word 'Brexit'</h5>
+  <p class='padding'>Tweets containing the word 'Brexit' were collected from the Twitter Developer API
+     every 3 minutes from 28th December 2018 to 7th January 2019.</p>
+
+  <h2 class='padding padfurther'>Aims</h2>
+  <p class='padding'>This website aims to address 4 key areas, which can be accessed along the navigation bar:</p>
+  <p class='padding indent'>&#8226 Raw Data Visualisation: plotting the data sets, allowing you to visually inspect any relationships
+  between the data</p>
+  <p class='padding indent'>&#8226 Data Analysis: Normalizing, downsampling, smoothing, and autocorrelating the data, as well as correlating
+  the data amongst themselves. This analysis can help choose variables for a machine learning model.</p>
+  <p class='padding indent'>&#8226 Predictions: Using a machine learning model based off of tweet data, a rough estimate for the
+  exchange rate can be calculated.</p>
+  <p class='padding indent'>&#8226 Insights: How can these conclusions and datasets be scaled, used for creative enterprise opportunities
+  and further analysed for future improvements.</p>
+  <img class="imgsize padfurther" src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/Brexit-201608030451513551-201804270857259151-20190108034139555.jpg" alt="Scatter Plot">
+  <p class='padding indent'><small><small>source: https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/743/cached.offlinehbpl.hbpl.co.uk/news/OMC/Brexit-201608030451513551-201804270857259151-20190108034139555.jpg</small></small></p>
+
+
+{% endblock content %}

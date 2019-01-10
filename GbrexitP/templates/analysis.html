@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1 class='padding'>Data Analysis</h1>
+  <p class='padding'>This page looks at the downsampled normalized datasets, and the autocorrelation (ACF) of these.</p>
+
+  <h5 class='padding padfurther'>Normalized Data Comparison</h5>
+  <p class='padding'>The normalized data can be plotted in the same graph.
+    Visual inspection reveals a clear correlation between tweet sentiment radicalness and number of tweets posted,
+    although there is no immediately obvious correlation with the GBP EUR exchange rate. It is clear there
+    is periodicity in the Number of Tweets and Sentiment radicalness.</p>
+  <div class="row">
+    <div class="col-md-10">
+      <div class='padding'>
+        {{ scriptA|safe }}
+        {{ divA|safe }}
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class='content-section'>
+        <p class='text-muted'>Hover over the graph to see values.</p>
+        <p class='text-muted'>Click the data series in the Legend to hide them.</p>
+      </div/
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <h5 class='padding indent padfurther'>AutoCorrelation for each normalized downsampled Dataset</h5>
+  <p class='padding indent'>The autoCorrelation (ACF) was implemented. It was found there was a clear
+    correlation for the average hourly number of tweets and tweet sentiment radicalness, per 24 hours. However,
+    the average tweet sentiment and exchange rates were clearly not autocorrelated.</p>
+  <div class="row">
+    <div class="col-md-10">
+      <div class='padding'>
+        {{ scriptC|safe }}
+        {{ divC|safe }}
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class='content-section'>
+        <p class='text-muted'>Hover over the graph to see values.</p>
+        <p class='text-muted'>Click the data series in the Legend to hide them.</p>
+      </div/
+      <div>
+      </div>
+    </div>
+  </div>
+  <h5 class='padding indent padfurther'>Scatter Matrix</h5>
+  <p class='padding indent'>The scatter matrix below allows us to quickly visually inspect any correlations between
+  any of the datasets. While some of the attributes of the tweets are slightly correlated, there is little to no linear
+  correlation between exchange rate or any other variable.</p>
+  <img class="imgsize" src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/49864335_771964063201989_3586904266096246784_n.png?_nc_cat=103&_nc_ht=scontent-lhr3-1.xx&oh=61b5523bad415eb2b7a6b004478a2fd5&oe=5CB82B17" alt="Scatter Plot">
+  <p class='padding padfurther'>The correlation of Tweet polarity to Exchange rate = 0.076</p>
+  <p class='padding'>The correlation of Tweet polarity to Number of tweets = 0.10</p>
+  <p class='padding'>The correlation of Tweet polarity to Tweet Radicalness = 0.63</p>
+  <p class='padding padfurther'>The correlation of Exchange rate to Number of tweets = 0.072</p>
+  <p class='padding'>The correlation of Exchange rate to Tweet Radicalness = 0.1</p>
+  <p class='padding padfurther'>The correlation of Tweet Radicalness to Number of tweets = 0.68</p>
+
+
+{% endblock content %}

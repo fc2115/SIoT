@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1 class='padding'>Raw Data</h1>
+    <p class='padding'>A Quick look at all the Raw Data Gathered. All data was sampled every 3 minutes.</p>
+
+    <h5 class='padding padfurther'>GBP - EUR Exchange Rates over Time</h5>
+    <p class='padding'>The data is seen to be quite erratic and does not appear structured at first glance.</p>
+    <div class="row">
+      <div class="col-md-10">
+        <div class='padding'>
+          {{ scriptE|safe }}
+          {{ divE|safe }}
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class='content-section'>
+          <p class='text-muted'>Hover over the graph to see values.</p>
+          <p class='text-muted'>Select some of the different tools to browse through the data differently.</p>
+        </div/
+        <div>
+        </div>
+      </div>
+    </div>
+
+    <h5 class='padding indent padfurther'>Number of Tweets Globally over Time</h5>
+    <p class='padding indent'>Zoom in to see the number of tweets posted every 3 minutes featuring the word 'Brexit'. Early visual inspection tells there is periodic correlation, with more tweets posted during the day, and less between midnight and 7am UTC.</p>
+    <div class="row">
+      <div class="col-md-10">
+        <div class='padding'>
+          {{ scriptN|safe }}
+          {{ divN|safe }}
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class='content-section'>
+          <p class='text-muted'>Hover over the graph to see values.</p>
+          <p class='text-muted'>Select some of the different tools to browse through the data differently.</p>
+        </div/
+        <div>
+        </div>
+      </div>
+    </div>
+
+    <h5 class='padding indent padfurther'>Individual Tweet Sentiment over Time</h5>
+    <p class='padding indent'>The tweet 'sentiment' is determined through a machine learning module called 'textblob', with &#62 0 positive, == 0 neutral, and &#60 0 negative.</p>
+    <p class='indent'> The data is noisy due to the large number of tweet sentiments analysed. The yellow line
+      shows the downsampled average tweet sentiment every 3 minutes. It can be seen that generally,
+      sentiments are less radical between midnight and 7am UTC. Finally, it can also be seen that tweet sentiment becomes more radical when more tweets
+    are posted.</p>
+    <div class="row">
+      <div class="col-md-10">
+        <div class='padding'>
+          {{ scriptS|safe }}
+          {{ divS|safe }}
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class='content-section'>
+          <p class='text-muted'>Click the data series in the Legend to hide them.</p>
+        </div/
+        <div>
+        </div>
+      </div>
+    </div>
+
+    <h5 class='padding indent padfurther'>Tweet Sentiment Radicalness over Time</h5>
+    <p class='padding indent'>This graph measures the radicalness of tweet sentiments over time. Firstly, a peak analysis of the data
+      initially found the symmetrical pattern about the x axis, which reflects how radical the tweet sentiments are. Next, the data is downsampled
+      via the sum method, such that the values of the peaks is plotted. This clearly shows an increase in tweet sentiment radicalness during
+      the day, and a clear reduction overnight (backing up the previous statement). It can also be seen on new years eve there was a spike in
+      sentiment radicalness, which is likely positive. </p>
+    <div class="row">
+      <div class="col-md-10">
+        <div class='padding'>
+          {{ scriptR|safe }}
+          {{ divR|safe }}
+        </div>
+      </div>
+
+
+{% endblock content %}

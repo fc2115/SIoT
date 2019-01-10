@@ -10,18 +10,17 @@ The 'Misc' Directory contains various programs not used in the final website app
 ## Auto_sense_store
 This directory contains all the code used to automatically collect the data. The server used was a raspberry pi, and as such, instead of running the program in a continuous for loop (which, in case of an error could cause big holes in the data), it was run on the RPi linux scheduler, using crontab. The 'Data Mining' script was run once every 3 minutes (therefore gathering data once every 3 minutes), and the 'G sheets upload' script run hourly to backup the data to goole drive.  
 #### Extra Python Packages Required
-- Tweepy  
-- Gspread  
-- oauth2client  
-- requests
+- tweepy==3.7.0  
+- gspread==3.1.0  
+- oauth2client==4.1.3   
+- requests==2.11.1   
 
 ## GbrexitP
 This directory contains the full working codes to run the local host web server application. Provided the csv data file 'tweets_and_rates.csv' is downloaded to the root (in GbrexitP), one need only run the 'Second_website.py' script, and navigate to the local host address stated in the console, where the webApp should be fully functional.
 #### Extra Python Packages Required
-- flask  
-- datetime  
-- bokeh  
-- sklearn (latest version)  
-- scipy (latest version)  
-- textblob  
-- re  
+- flask==0.11.1  
+- datetime==4.3   
+- bokeh==1.0.3  
+- sklearn==0.17.1   
+- scipy==1.2.0  
+- textblob==0.15.2  

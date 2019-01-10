@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sensing-and-iot-1545938777588",
+  "private_key_id": "be93a6dd26a7ca735a8a894e3398ac9d60bef8ef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAtWHr8pIQdN+5\ndX9TOXqVZgVeGTJk7Sh6x4Hx1CnJcvOykpv7S26/aVftDokWLTwuXX3unKpWwp1A\nzBiaoW5J8EMJ9BPyn2jNo2GDwtUqjvYwgnoqhTeGJtpYG3Mw61RnYPkBitumGV01\nQ7zfFBw2ZzNTV1WnBZxl5dfP9s/JxTEoNfFpVtxJaH9oyPv0Mp3xAoRc5ukYRlUf\n4xZIC2vTs01QPIXSy60GqZgDxocX8VWL79XLtEA2OW+n+eN+epvEkZ0u16ILRxHo\nGupx52WLgJu3aJgzpxcgMGcqKux2KJ0edGgTxPaYSpUHiPjxYvcXkOwkCbAcMV6c\noNDSKTE/AgMBAAECggEALMDzAMzQxymdW4DCFR3gLhoHXRcU8QNyxzDWKMdQ/QvJ\nNMt/lhiqm6FnXhJmG9RdiZcEzAluNb/0rTu46xBagKlfqEwa5dnHiRpMZ0E0KDIT\nUqi6nm1Zu7oCMzwMwGumqmuG6KjK4gQ59UjJ8DTHaIsHDG/X4HYZIEEEobN8Bity\nRNTS1jnkZz0fZMSXkDHyhCwNNLzERN1OUnGf8+aGXn7u741VW68TEOF1ThQ2EMyE\nK36EmC7mYl74WrJ3ohXgGqMwY/WRga7Flf6DyzF/27tbG1e47eyaQOEY3kQPysnP\ns1THbjIICZvAFARDQHMPdKnQWNGeEZv9hUV/5thDQQKBgQDm5G4vlQx+XU1HZ9PY\nE/xsWKfUoBEsVtTdztxr+HEu4dKMiI3Gwru+TVrv1DRmTtAEsiTtcCf4NPZQK1PX\np8mC7ClREKdujucvhMc4MjNP53My8PFCB3+9WV5Vwig2pGC8TgEg84X/kGpeykov\nIaW5wb+U1D092WbHq9QhA8DYlwKBgQDVqf5k3UsygfryigHIfxn1NZyHwpZ6MDoK\nh3TUVdFekU8z2qaoThZHIWFkLHNPuuQB7mb+2ddBUqXpTG3C1KXkSoaoK9ArBWtE\nVarcZ5QkfS2FdVinA+UCfVyim2WTulckeoabpZHzZ1l9OTPmutfziKj0xQjQqufw\nMydtdmcZmQKBgQCeHbCXRSrZHmvdimy4fHdQeyXzpeocwxnjC9ZG2kwoHt1g/+KX\nSqPnHnI36so3haFOlfBT6Yp1n09Od11jQbPtxGxG53DBdXs8P2FuSnJ5NbbeG8Ib\nxabktF61u9BuGwNj8Mc1GY+aA/vUDhPfUtt66gOYl/+Ya1jHRBRwx3E44QKBgQCg\nDnY5jOS181TPt75aOYxyejTGJmifI9124b4NCjSLSQMx7wuFbOmXY1QXvIytH22K\nXNLe+sUbdBRBTjWzC6Ux/PoepKOOdsLCMAKMlTMOmo8tOJiulGZLlSl9zjcrkR2S\ngA6yLjfFRJhvDBjrMPBwyOD4a1mNJ1oUP927TEUzkQKBgQDApV+3d9qWWNuChwb4\nWTG5lfTu4clV/h79OyG7q4VWI2pMLc+DbvzmEJVutKmP8CSFJ9sncYg94ydX3f8y\nSEXT5c6vc1acOmQuFWK2s/8tvfcdafIRJkoysvrH8SqZaVLKLhMw27v79kdIwITQ\nXHd28myWZjRDTcqNF8O5cA7EZg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "prettyprinted@sensing-and-iot-1545938777588.iam.gserviceaccount.com",
+  "client_id": "117048084164371485470",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prettyprinted%40sensing-and-iot-1545938777588.iam.gserviceaccount.com"
+}

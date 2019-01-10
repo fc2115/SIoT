@@ -117,23 +117,3 @@ print_tweet(tweet2)
 # Write the tweets out to the file
 data_set = process_results(results)
 data_set.to_csv('tweets_and_rates.csv', mode = 'a', index=False, header=None)
-
-###############################################################################
-#
-# THIS SECTION IS FOR UPLOADING THE DATA TO GOOGLE DRIVE AS A BACKUP
-#
-###############################################################################
-
-# Authorization procedure
-scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('final.json', scope)
-client = gspread.authorize(credentials)
-
-# Open the csv to be uploaded into google
-content = open('tweets_and_rates.csv', 'r').read().encode('utf-8').decode('latin-1')
-
-### import the csv data into a sheet file in google drive
-# The long string is the ID of the spreadsheet called Test
-# TEST id is "1uEpTio-0Ub1-ln2HyPjubGaZSHrlR0OX_AnMiXkxMnk"
-# Brexit_GBP id is 1Y5oZ125V4T28BEodfZ37owTUo_MO6USQlGihT4W9LyI
-client.import_csv("1Y5oZ125V4T28BEodfZ37owTUo_MO6USQlGihT4W9LyI", content)

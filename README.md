@@ -1,4 +1,4 @@
-# SIoT - Felix Crowther CID: 01069704
+# SIoT - Felix Crowther
 ## !!! Important !!!
 The data File was too large (>25mb) to be stored here, so I have inluded its link here:  
 https://drive.google.com/open?id=14t7piWnjWSlbWVpJpCtsDH-6ukN7EiZp  
